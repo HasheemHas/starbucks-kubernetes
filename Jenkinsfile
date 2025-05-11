@@ -15,7 +15,8 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', '
+                git branch: 'main', url: 'https://github.com/HasheemHas/starbucks-kubernetes.git'
+
             }
         }
         stage("Sonarqube Analysis "){
